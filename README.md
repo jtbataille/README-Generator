@@ -1,9 +1,8 @@
-
 # README.md Generator
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Description
-woeij
+The user of this program will be provided with a series of prompts using inquirer in order to generate a dynamically-created README.md file. These command-line prompts will obtain the necessary information for a professional README.md file and subsequently create this file for the user's project, program, or application.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -26,7 +25,9 @@ Copyright © 2007 Free Software Foundation, Inc. <https://fsf.org/>
 Jarrod Bataille
 
 ## Tests
-In order to test this program, use the following command: node index.js
+In order to test this program, use the following command:
+
+> node index.js
 
 ## Contact Information
 * Jarrod Bataille
