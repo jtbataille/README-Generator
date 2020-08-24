@@ -63,7 +63,7 @@ const questions = [
 // function to write README file
 async function writeToFile (data) {
     try {
-        await asyncWrite("README.md", generateMarkdown);
+        await asyncWrite("README.md", generateMarkdown.generateMarkdown(data));
         console.log("Your README.md was created successfully.");
     } catch(err) {
         console.log(err);
