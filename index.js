@@ -73,8 +73,9 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-
-}
+    generateMarkdown(questions);
+    writeToFile("README.md", generateMarkdown(questions));
+};
 
 // function call to initialize program
 init();
