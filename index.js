@@ -64,7 +64,12 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-}
+    fs.writeFile(fileName, data, "utf8", err => {
+        if (err) throw err;
+
+        console.log("Your README.md was successfully created.");
+    });
+};
 
 // function to initialize program
 function init() {
