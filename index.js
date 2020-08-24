@@ -72,7 +72,7 @@ async function writeToFile (data) {
 
 // function to initialize program
 function init() {
-    inquirer.prompt(questions).then(answers => {
+    inquirer.prompt(questions).then( (answers) => {
         writeToFile(answers);
     });
 };

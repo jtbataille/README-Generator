@@ -2,15 +2,15 @@
 const license = value => {
   switch (value) {
     case "MIT":
-      return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+      return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
 
     case "GNU GLPv3":
-      return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+      return '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
 
     case "ISC":
-      return "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
+      return '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)';
 
-    default :
+    default:
       return "";
   }
 };
@@ -18,13 +18,13 @@ const license = value => {
 const licenseText = (value, name) => {
   switch (value) {
     case "MIT":
-      return "Copyright © 2020" + name;
+      return 'Copyright © 2020 ' + name;
       
     case "GNU GLPv3":
-      return "Copyright © 2007 Free Software Foundation, Inc. <https://fsf.org/>";
+      return 'Copyright © 2007 Free Software Foundation, Inc. <https://fsf.org/>';
 
     case "ISC":
-      return "Copyright 2020" + name;
+      return 'Copyright 2020 ' + name;
 
     default :
       return "";
@@ -35,18 +35,18 @@ module.exports = {
   generateMarkdown: data => {
     return `
     # ${data.title}
-      ${license(data.license)}
+    ${license(data.license)}
   
     ## Description
-      ${data.description}
+    ${data.description}
   
     ## Table of Contents
-      * [Installation](#installation)
-      * [Usage](#usage)
-      * [License](#license)
-      * [Contributors](#contributors)
-      * [Tests](#tests)
-      * [Contact Information](#contact-information)
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [License](#license)
+    * [Contributors](#contributors)
+    * [Tests](#tests)
+    * [Contact Information](#contact-information)
     
     ## Installation
     As a user, you will need to instal the following packages: ${data.installation}
@@ -66,7 +66,7 @@ module.exports = {
     ## Contact Information
     GitHub Profile: https://github.com/${data.username}
     
-    Please email me with any questions at ${data.email}
+    Please email me with any questions here: ${data.email}
   `;
   }
 };
