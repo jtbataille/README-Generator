@@ -16,7 +16,11 @@ The user of this program will be provided with a series of prompts using inquire
 As a user, you will need to instal the following packages: inquirer
 
 ## Usage
-Here is how you can use this program: woeifjwe
+To run, a user should clone this GitHub repository, open an integrated terminal--or a general terminal within the appropriate directory--, and enter the command
+
+<code>node index.js</code>
+
+Upon entering this command-line text, the user should answer each of the prompts as these are the answers this program will use to dynamically create the README.md file for the user's purposes.
 
 ## License
 Copyright © 2007 Free Software Foundation, Inc. <https://fsf.org/>

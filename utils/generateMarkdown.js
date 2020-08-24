@@ -48,7 +48,7 @@ ${data.description}
 As a user, you will need to instal the following packages: ${data.installation}
 
 ## Usage
-Here is how you can use this program: ${data.usage}
+${data.usage}
 
 ## License
 ${licenseFieldText(data.license, data.name)}
@@ -57,7 +57,9 @@ ${licenseFieldText(data.license, data.name)}
 ${data.contributors}
 
 ## Tests
-In order to test this program, use the following command: ${data.tests}
+In order to test this program, use the following command: 
+
+<code>${data.tests}</code>
 
 ## Contact Information
 * ${data.name}
