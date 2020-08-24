@@ -3,6 +3,8 @@ const inquirer = require("inquirer");
 const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown.js");
 
+const asyncWrite = util.promisify(fs.writeFile);
+
 // array of questions for user
 const questions = [
     {
@@ -34,7 +36,7 @@ const questions = [
         type: "list",
         message: "Which license does your project have?",
         name: "license",
-        choices: ["MIT", "APACHE 2.0", "None"]
+        choices: ["MIT", "GNU GPLv3", "None"]
     },
     {
         type: "input",
@@ -59,18 +61,19 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, "utf8", err => {
-        if (err) throw err;
-
-        console.log("Your README.md was successfully created.");
-    });
+async function writeToFile (data) {
+    try {
+        await asyncWrite("README.md", generateMarkdown.generateMarkdown(data));
+        console.log("Your README.md was created successfully.");
+    } catch(err) {
+        console.log(err);
+    }
 };
 
 // function to initialize program
 function init() {
     inquirer.prompt(questions).then(answers => {
-        writeToFile("README.md", answers);
+        writeToFile(answers);
     });
 };
 
