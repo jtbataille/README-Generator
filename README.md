@@ -13,7 +13,7 @@ The user of this program will be provided with a series of prompts using inquire
 * [Contact Information](#contact-information)
 
 ## Installation
-As a user, you will need to instal the following packages: inquirer
+As a user, you will need to install the following packages: inquirer
 
 ## Usage
 To run, a user should clone this GitHub repository, open an integrated terminal--or a general terminal within the appropriate directory--, and enter the command

@@ -1,4 +1,4 @@
-// function to generate markdown for README
+// switch() to run through licensure banner based on user list-selection
 const license = value => {
   switch (value) {
     case "MIT":
@@ -12,6 +12,7 @@ const license = value => {
   }
 };
 
+// switch() to run through licensure text based on user list-selection
 const licenseFieldText = (value, name) => {
   switch (value) {
     case "MIT":
@@ -25,10 +26,11 @@ const licenseFieldText = (value, name) => {
   }
 }
 
+// module turned into a function to be utilized in async function within index.js
 module.exports = {
   generateMarkdown: data => {
     
-    
+    // use of interpolation (template literals) to create a dynamic README.md file
     return `
 # ${data.title}
 ${license(data.license)}
@@ -45,7 +47,7 @@ ${data.description}
 * [Contact Information](#contact-information)
 
 ## Installation
-As a user, you will need to instal the following packages: ${data.installation}
+As a user, you will need to install the following packages: ${data.installation}
 
 ## Usage
 ${data.usage}
