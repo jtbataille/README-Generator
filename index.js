@@ -65,8 +65,8 @@ const questions = [
 // async function used to get all answers with inquirer prompts before writing README.md
 async function writeToFile (data) {
     try {
-        await asyncWrite("README.md", generateMarkdown.generateMarkdown(data));
-        console.log("Your README.md was created successfully.");
+        await asyncWrite("README2.md", generateMarkdown.generateMarkdown(data));
+        console.log("Your README2.md was created successfully.");
     } catch(err) {
         console.log(err);
     }
