@@ -27,7 +27,7 @@ Jarrod Bataille
 ## Tests
 In order to test this program, use the following command:
 
-> node index.js
+<code>node index.js</code>
 
 ## Contact Information
 * Jarrod Bataille
