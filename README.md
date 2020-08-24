@@ -10,6 +10,7 @@ The user of this program will be provided with a series of prompts using inquire
 * [License](#license)
 * [Contributors](#contributors)
 * [Tests](#tests)
+* [Application Demo](#application-demo)
 * [Contact Information](#contact-information)
 
 ## Installation
@@ -32,6 +33,11 @@ Jarrod Bataille
 In order to test this program, use the following command:
 
 <code>node index.js</code>
+
+## Application Demo
+* [Application Demo](https://github.com/jtbataille/README-Generator/blob/master/Screen%20Recording/README.md%20Generator%20GIF.gif)
+* [Auto-generated README.md](https://github.com/jtbataille/README-Generator/blob/master/README2.md)
+
 
 ## Contact Information
 * Jarrod Bataille
