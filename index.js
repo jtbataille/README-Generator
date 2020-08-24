@@ -1,8 +1,10 @@
+// list of required packages in order to run program
 const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown");
 
+// promisifying writeFile to use an async function
 const asyncWrite = util.promisify(fs.writeFile);
 
 // array of questions for user
@@ -60,7 +62,7 @@ const questions = [
     }
 ];
 
-// function to write README file
+// async function used to get all answers with inquirer prompts before writing README.md
 async function writeToFile (data) {
     try {
         await asyncWrite("README.md", generateMarkdown.generateMarkdown(data));
@@ -70,9 +72,9 @@ async function writeToFile (data) {
     }
 };
 
-// function to initialize program
+// function using inquirer prompts and answers to write file
 function init() {
-    inquirer.prompt(questions).then( (answers) => {
+    inquirer.prompt(questions).then((answers) => {
         writeToFile(answers);
     });
 };
