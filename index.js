@@ -1,5 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
+const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown.js");
 
 // array of questions for user
@@ -33,7 +34,7 @@ const questions = [
         type: "list",
         message: "Which license does your project have?",
         name: "license",
-        choices: ["MIT", "APACHE 2.0", "GPL v3", "BSD 3", "None"]
+        choices: ["MIT", "APACHE 2.0", "None"]
     },
     {
         type: "input",
@@ -68,8 +69,9 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-    generateMarkdown(questions);
-    writeToFile("README.md", generateMarkdown(questions));
+    inquirer.prompt(questions).then(answers => {
+        writeToFile("README.md", answers);
+    });
 };
 
 // function call to initialize program
