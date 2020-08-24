@@ -9,6 +9,11 @@ const asyncWrite = util.promisify(fs.writeFile);
 const questions = [
     {
         type: "input",
+        message: "What is your full name?",
+        name: "name"
+    },
+    {
+        type: "input",
         message: "What is the title of your project?",
         name: "title"
     },
