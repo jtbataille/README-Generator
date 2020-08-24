@@ -15,7 +15,7 @@ const license = value => {
   }
 };
 
-const licenseText = (value, name) => {
+const licenseFieldText = (value, name) => {
   switch (value) {
     case "MIT":
       return 'Copyright © 2020 ' + name;
@@ -55,7 +55,7 @@ module.exports = {
     Here is how you can use this program: ${data.usage}
   
     ## License
-    ${licenseText(data.license, data.name)}
+    ${licenseFieldText(data.license, data.name)}
   
     ## Contributors
     ${data.contributors}
