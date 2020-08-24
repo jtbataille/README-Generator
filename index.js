@@ -1,7 +1,7 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
-const generateMarkdown = require("./utils/generateMarkdown.js");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 const asyncWrite = util.promisify(fs.writeFile);
 
@@ -23,11 +23,6 @@ const questions = [
         name: "description"
     },
     {
-        type: "list",
-        message: "What contents should your README.md contain?",
-        name: "content"
-    },
-    {
         type: "input",
         message: "What packages will a user need to install to use your project?",
         name: "installation"
@@ -35,7 +30,7 @@ const questions = [
     {
         type: "input",
         message: "Explain how a new user can use this project:",
-        nname: "usage"
+        name: "usage"
     },
     {
         type: "list",
@@ -68,7 +63,7 @@ const questions = [
 // function to write README file
 async function writeToFile (data) {
     try {
-        await asyncWrite("README.md", generateMarkdown.generateMarkdown(data));
+        await asyncWrite("README.md", generateMarkdown);
         console.log("Your README.md was created successfully.");
     } catch(err) {
         console.log(err);
