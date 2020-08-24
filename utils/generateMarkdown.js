@@ -64,9 +64,9 @@ module.exports = {
     In order to test this program, use the following command: ${data.tests}
   
     ## Contact Information
-    GitHub Profile: https://github.com/${data.username}
-    
-    Please email me with any questions here: ${data.email}
+    * ${data.name}
+      * GitHub Profile: https://github.com/${data.username}
+      * Please email me with any questions here: ${data.email}
   `;
   }
 };
