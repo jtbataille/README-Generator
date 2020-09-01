@@ -5,7 +5,7 @@
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
-* [Technologies Used](#technologies-used
+* [Technologies Used](#technologies-used)
 * [Tests](#tests)
 * [Application Demo](#application-demo)
 * [Contact Information](#contact-information)
@@ -25,12 +25,6 @@ Upon entering this command-line text, the user should answer each of the prompts
 
 ## Technologies Used
 Node JS, JavaScript, Inquirer
-
-## License
-Copyright © 2007 Free Software Foundation, Inc. <https://fsf.org/>
-
-## Contributors
-Jarrod Bataille
 
 ## Tests
 In order to test this program, use the following command:
