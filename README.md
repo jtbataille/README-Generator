@@ -32,7 +32,7 @@ In order to test this program, use the following command:
 <code>node index.js</code>
 
 ## Application Demo
-* [Application Demo](https://github.com/jtbataille/README-Generator/blob/master/Screen%20Recording/README.md%20Generator%20GIF.gif)
+* [Application Demo GIF](https://drive.google.com/file/d/1SD1qOwN0psHxVKjecJ3_Z7yH2igEnlpA/view?usp=sharing)
 * [Auto-generated README.md](https://github.com/jtbataille/README-Generator/blob/master/README2.md)
 
 
