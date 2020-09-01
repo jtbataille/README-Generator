@@ -5,6 +5,7 @@
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
+* [Technologies Used](#technologies-used
 * [Tests](#tests)
 * [Application Demo](#application-demo)
 * [Contact Information](#contact-information)
@@ -21,6 +22,9 @@ To run, a user should clone this GitHub repository, open an integrated terminal-
 <code>node index.js</code>
 
 Upon entering this command-line text, the user should answer each of the prompts as these are the answers this program will use to dynamically create the README.md file for the user's purposes.
+
+## Technologies Used
+Node JS, JavaScript, Inquirer
 
 ## License
 Copyright © 2007 Free Software Foundation, Inc. <https://fsf.org/>
