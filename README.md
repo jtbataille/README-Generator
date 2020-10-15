@@ -41,6 +41,3 @@ In order to test this program, use the following command:
   * Portfolio Webpage: https://jtbataille.github.io/
   * GitHub Profile: https://github.com/jtbataille
   * E-mail Address: jtbataille@gmail.com
-
-- - -
-Copyright © 2007 Free Software Foundation, Inc. <https://fsf.org/>
